@@ -1,0 +1,48 @@
+.outer-container-opleidingen {
+    background: linear-gradient(rgba(255, 127, 80, 0.73), rgba(64, 213, 200, 0.56));
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 2em;
+    height: 87vh;
+}
+
+.inner-container-opleidingen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    flex-basis: 1100px;
+}
+
+.inner-container-opleidingen h1 {
+    padding: 40px;
+    font-size: 1.5em;
+}
+
+.opleidingen-content-container-rows {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.opleidingen-content-container-columns {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 0;
+
+}
+
+.opleidingen-content-container-columns ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    background: rgba(36, 36, 36, 0.17);
+    padding: 20px;
+
+
+}

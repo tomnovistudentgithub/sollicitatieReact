@@ -11,7 +11,7 @@ function NavBar() {
         <nav className="navbar-inner-container">
           <ul>
             <li>
-              <NavLink exact to="/" className="nav-link" activeClassName="active-nav-link">
+              <NavLink exact to="/" className="nav-link" activeClassName="active">
                 <FontAwesomeIcon icon={faHome} /> <span className="nav-text">Home</span>
               </NavLink>
             </li>

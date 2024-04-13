@@ -6,7 +6,7 @@ function Footer() {
         <div className="inner-container-footer">
         <p>Powered by: <FaReact /> React</p>
         <p>Created by: Tom</p>
-      <p>13-04-2024</p>
+      <p>14-04-2024</p>
         </div>
     </footer>
   );

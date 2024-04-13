@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(rgba(255, 127, 80, 0.73), rgba(64, 213, 200, 0.56));
 }
 
 .inner-container-motivatie {
-    width: 57%;
-    height: 90%;
+    width: 70%;
+    height: 80%;
     background: rgba(255, 255, 255, 0.24);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -18,21 +18,28 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-
-
+    margin-right:20px;
+    margin-left:20px;
 
 }
+
+.motivatie-content-container {
+    margin-top: 20px;
+    margin-right:20px;
+}
+
 
 .inner-container-motivatie p {
     font-size: 1.1em;
     color: #333;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     z-index: 1;
 }
 
+
 .quote-block {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-style: italic;
     color: #fcfafa;
     text-align: center;
@@ -67,6 +74,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom:20px
 }
 
 .invite-button, .reject-button {
@@ -122,16 +130,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: 60%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-direction: column;
 }
 .modal-content {
     flex-basis: 400px;
+    text-align: center;
 
 
 }

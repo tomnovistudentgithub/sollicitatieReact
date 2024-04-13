@@ -178,8 +178,6 @@
 }
 
 .about-page-content-container {
-
-
     display: flex;
     flex-basis: 900px;
     height: 100%;
@@ -191,6 +189,7 @@
     padding: 20px;
     gap:20px;
     background: rgba(147, 147, 147, 0.29);
+    margin-left: 50px;
 
 
 }

@@ -77,14 +77,15 @@ function Motivatie() {
                         de IT het enthousiasme van een beginner meebreng. Ook denk ik een waardevolle bijdrage te kunnen
                         leveren aan het opzetten van het team.</p>
                     <p>Laat me maar weten of je wilt dat ik op gesprek kom! </p>
-                </div>
-                <div className="button-container">
-                    <button className="invite-button" onClick={handleInviteClick} onMouseOver={handleInviteHover}
-                            onMouseOut={handleInviteMouseOut}>{inviteButtonText}</button>
+                    <div className="button-container">
+                        <button className="invite-button" onClick={handleInviteClick} onMouseOver={handleInviteHover}
+                                onMouseOut={handleInviteMouseOut}>{inviteButtonText}</button>
 
-                    <button className="reject-button" onClick={handleRejectClick} onMouseOver={handleRejectHover}
-                            onMouseOut={handleRejectMouseOut}>{rejectButtonText}</button>
+                        <button className="reject-button" onClick={handleRejectClick} onMouseOver={handleRejectHover}
+                                onMouseOut={handleRejectMouseOut}>{rejectButtonText}</button>
+                    </div>
                 </div>
+
             </div>
             {showModal && (
                 <div className="modal">
