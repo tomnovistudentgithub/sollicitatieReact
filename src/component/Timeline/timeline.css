@@ -1,0 +1,148 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 71vh;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 15px;
+    background: rgba(64, 213, 200, 0.88);
+    border-radius: 10px;
+}
+
+.timeline-event {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-event-icon {
+    position: relative;
+    background: #40d5c8;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: 80px;*/
+}
+
+.timeline-event-icon p {
+    font-weight: bold;
+    color: #242424;
+}
+
+.timeline-event-icon span {
+    font-weight: bold;
+    color: #242424;
+    font-style: italic;
+}
+
+
+.timeline-event-logo {
+    position: absolute;
+    font-size: 2em;
+    top: 0px;
+    right: 200px;
+    width: 400px;
+    height: 200px;
+    z-index: 3;
+
+}
+
+.timeline-event-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.timeline-event-content {
+    position: absolute;
+    padding: 10px;
+    background: rgba(255, 127, 80, 0.73);
+    width: 500px;
+    border-radius: 5px;
+    margin-top: 70px;
+    z-index: 1;
+    left: 150px;
+    top: 50px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1500px) {
+    .timeline-event-logo {
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        right: 20px;
+    }
+
+    .timeline-event-content {
+        position: absolute;
+        width: 300px;
+        left: 20px;
+    }
+}
+
+.info-and-button-timeline {
+    font-style: italic;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-and-button-timeline svg {
+    color: rgba(36, 127, 201, 0.88);
+
+}
+
+
+.info-and-button-timeline svg:hover {
+    color: rgba(169, 70, 252, 0.88);
+}
+
+
+.info-and-button-timeline .btn-werkervaring {
+    text-align: center;
+    color: #f9f9f9;
+    background: rgba(255, 127, 80, 0.73);
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #242424 0px 0px 5px;
+
+}
+
+.info-and-button-timeline .btn-werkervaring:hover {
+    text-align: center;
+    color: #f9f9f9;
+    background: rgba(149, 67, 248, 0.8);
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #242424 0px 0px 5px;
+
+}

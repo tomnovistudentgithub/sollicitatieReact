@@ -1,0 +1,19 @@
+.outer-container-werkervaring {
+    background: linear-gradient(rgba(255, 127, 80, 0.73), rgba(64, 213, 200, 0.56));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content-werkervaring {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+

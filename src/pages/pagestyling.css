@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.outer-container-homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 120px);
+    background: linear-gradient(rgba(255, 127, 80, 0.73), rgba(64, 213, 200, 0.56));
+    animation: moving-background 30s linear infinite;
+    background-size: 100% 200%;
+
+}
+
+.outer-container-homepage h1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2em;
+}
+
+.code-icon-homepage {
+    font-size: 6em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.code-icon-homepage:hover {
+    transform: scale(1.2);
+}
+
+.homepage-logo-content span {
+    font-weight: bold;
+}
+
+@keyframes moving-background {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
+
+
+.inner-container-homepage {
+    display: flex;
+    flex-basis: 750px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    background: rgba(36, 36, 36, 0.2);
+}
+
+.inner-container-homepage span {
+    margin: 20px;
+}
+
+.inner-container-homepage p {
+    margin: 20px;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.homepage-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+
+.homepage-logo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.form-homepage {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-homepage label {
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.btn-homepage {
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: rgba(255, 127, 80, 0.73);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    transition: border-color 0.25s;
+}
+
+.btn-homepage:hover {
+    border-color: rgba(52, 210, 16, 0.45);
+    border: 25px;
+}
+
+.btn-homepage:active {
+
+    border: 25px;
+    transform: scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.input-homepage {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.76);
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+}
+
+.input-homepage:focus {
+    padding: 10px;
+    border-radius: 20px;
+    border: 4px solid rgba(47, 175, 18, 0.45);
+}
+
+.form-group {
+    padding:20px;
+}
+
+.error-style {
+    color: #8d2828;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.input-error {
+    border: 5px solid rgba(239, 42, 42, 0.7);
+}
+
+.about-page-outer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 87vh;
+  width: 100vw;
+    background: linear-gradient(rgba(255, 127, 80, 0.73), rgba(64, 213, 200, 0.56));
+}
+
+.about-page-container-header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.about-page-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 600px;
+
+    border-radius: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-page-content-container {
+
+
+    display: flex;
+    flex-basis: 900px;
+    height: 100%;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 20px;
+    gap:20px;
+    background: rgba(147, 147, 147, 0.29);
+
+
+}
+
+
+
+.about-image-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 40px 20px 20px;
+
+    height: 400px;
+
+}
+
+.about-image-container img{
+    border-radius: 10%;
+    width: 250px;
+    height: 300px;
+}
+
