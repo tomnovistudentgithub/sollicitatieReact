@@ -1,8 +1,38 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './motivatie.css';
 
 function Motivatie() {
-    return (
+        const [showModal, setShowModal] = useState(false);
+        const [modalContent, setModalContent] = useState('');
+    const [rejectButtonText, setRejectButtonText] = useState('Kandidaat afwijzen');
+    const [inviteButtonText, setInviteButtonText] = useState('Uitnodigen op gesprek');
+    const handleInviteClick = () => {
+        setModalContent('Thank you note and a celebration animation');
+        setShowModal(true);
+    };
+
+    const handleRejectClick = () => {
+        setModalContent('Computer says no, a text part and a videoclip of angry cats');
+        setShowModal(true);
+    };
+
+    const handleRejectHover = () => {
+        setRejectButtonText('😡');
+    };
+
+    const handleRejectMouseOut = () => {
+        setRejectButtonText('Kandidaat afwijzen');
+    };
+
+    const handleInviteHover = () => {
+        setInviteButtonText('😊');
+    }
+
+    const handleInviteMouseOut = () => {
+        setInviteButtonText('Uitnodigen op gesprek');
+    };
+
+        return (
 
         <div className="outer-container-motivatie">
 
@@ -13,28 +43,57 @@ function Motivatie() {
             <div className="inner-container-motivatie">
 
                 <div className="motivatie-content-container">
-                    <p>Laat me even vooropstellen, ik probeer me hier niet te meten aan Steve Jobs</p>
+                    <p>Laat me even vooropstellen, ik probeer me hier niet te meten aan Steve Jobs. Voor mij betekent
+                        'great work' niet zozeer het bereiken van top prestaties maar vooral het opgaan in iets wat
+                        intrinsiek bij je past. Met mijn 40 uur werk per week kan ik me helemaal vinden in die
+                        quote. </p>
 
-                    <p>Maar werk wat je 40 uur per week doet kan maar beter bij je passen, dus ik kan me helemaal vinden in de quote.</p>
-                    <p>Maar werk wat je 40 uur per week doet kan maar beter bij je passen, dus ik kan me helemaal vinden in de quote.</p>
+                    <p>Ik ben ooit generalistisch begonnen door mijn brede interesse. En ook op het gebied van IT merk
+                        ik deze eigenschap weer terug. Vooral dat de IT oneindig complex kan zijn zorgt voor een
+                        continue uitdaging en vervult mijn leergierigheid. Zeker met de AI ontwikkelingen gaat er veel
+                        veranderen, en ik blijf graag - in hoeverre dat mogelijk is in de IT - <i>ahead of the curve</i>.
+                    </p>
 
+                    <p>Vanaf het begin bij functioneel beheer heeft de technische hoek mij getrokken. Bij mijn
+                        sollicitatiegesprek bij functioneel beheer gaf ik al eens aan dat coderen mij erg
+                        aantrok. En jaren later stroomt het bloed nog steeds waar het niet gaan kan. Of ja: uiteindelijk
+                        stroomt het toch die kant op.</p>
 
-                    <p>Generalistisch begin, zeer breed geinteresseerd.
-                        steeds meer specialistisch</p>
-                    <p>Bij mijn sollicitatiegesprek bij functioneel beheer gaf ik al eens aan dat coderen mij erg
-                        aantrok..</p>
-                    <p>En jaren later stroomt het bloed nog steeds waar het niet gaan kan </p>
+                    <p>Ik heb bij IM de kans gekregen om een opleiding te starten tot full stack developer en mijn
+                        werkplezier is enorm toegenomen sinds ik dit steeds meer in mijn werk toepas. Samen met Caroline
+                        sparren over de Java code in de Student Portal geeft veel energie. Maar ook zelf aan mijn
+                        frontend project werken voor de studie. En natuurlijk met collegas om tafel zitten om ideeën uit
+                        te werken. </p>
 
-                    <p>Ben de IT alles behalve beu, maar wil er wel een nieuwe invulling aan geven</p>
-                    <p>DevOps</p>
-                    <p>direct stakeholder contact</p>
-                    <p>Geen eenpitter</p>
-                    <p>afleggne tegen ervaren mendix consultant</p>
-                    <p>Van proces naar </p>
+                    <p>Ik ben de IT dus alles behalve beu, maar wil er wel een nieuwe invulling aan geven. Ik zie in de
+                        toekomst een rol voor me als DevOps. Een technish expert die ook direct met een gebruiker en
+                        collega kan schakelen over nieuwe functionaliteit. Die samenwerkt aan het verbeteren van de
+                        producten. Ik ben dus geen eenpitter.</p>
+
+                    <p>Qua specifieke ervaring zal ik het afleggen tegen een ervaren mendix consultant. Maar het
+                        voordeel dat ik meebreng is dat ik de uni al goed ken en dat ik ondanks mijn senior ervaring in
+                        de IT het enthousiasme van een beginner meebreng. Ook denk ik een waardevolle bijdrage te kunnen
+                        leveren aan het opzetten van het team.</p>
+                    <p>Laat me maar weten of je wilt dat ik op gesprek kom! </p>
+                </div>
+                <div className="button-container">
+                    <button className="invite-button" onClick={handleInviteClick} onMouseOver={handleInviteHover}
+                            onMouseOut={handleInviteMouseOut}>{inviteButtonText}</button>
+
+                    <button className="reject-button" onClick={handleRejectClick} onMouseOver={handleRejectHover}
+                            onMouseOut={handleRejectMouseOut}>{rejectButtonText}</button>
                 </div>
             </div>
+            {showModal && (
+                <div className="modal">
+                    <div className="modal-content">
+                        {modalContent}
+                    </div>
+                    <button onClick={() => setShowModal(false)}>Close</button>
+                </div>
+            )}
         </div>
-    );
+        );
 }
 
 export default Motivatie;
