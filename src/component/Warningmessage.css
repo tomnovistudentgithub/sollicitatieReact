@@ -12,7 +12,7 @@
     font-size: 0.9em;
 }
 
-@media (max-width: 799px) {
+@media (max-width: 1000px) {
     .warning-message {
         display: block;
     }
