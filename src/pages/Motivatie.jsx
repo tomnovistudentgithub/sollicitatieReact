@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import './motivatie.css';
+import inviteGif from '../assets/i74.gif';
+import rejectGif from '../assets/angrycat.gif';
 
 function Motivatie() {
         const [showModal, setShowModal] = useState(false);
@@ -7,12 +9,12 @@ function Motivatie() {
     const [rejectButtonText, setRejectButtonText] = useState('Kandidaat afwijzen');
     const [inviteButtonText, setInviteButtonText] = useState('Uitnodigen op gesprek');
     const handleInviteClick = () => {
-        setModalContent('Thank you note and a celebration animation');
+        setModalContent(<><p>Beste collega, top dat je me op gesprek wilt laten komen. <br></br>Bespreek het nog even ondeling met jullie team, maar ik kom graag op gesprek! <br></br> Groet, Tom </p><img src={inviteGif} alt="Invite GIF" /></>); // Add the img tag here
         setShowModal(true);
     };
 
     const handleRejectClick = () => {
-        setModalContent('Computer says no, a text part and a videoclip of angry cats');
+        setModalContent(<><h1>Computer says no!!! Broken link</h1> <p> Maar goed dat er geen backend in deze applicatie zit, want dan had ik geweten wie je was. Dan had ik de emergency user aangevraagd en je 3 salarisschalen teruggezet 😈. Nee hoor dat zou ik nooit doen... Jammer dat je me niet gekozen hebt, maar ik hoor graag waarom. </p> <img src={rejectGif} alt="Reject GIF" /></>); // Voeg de img tag hier toe
         setShowModal(true);
     };
 
@@ -49,7 +51,7 @@ function Motivatie() {
                         quote. </p>
 
                     <p>Ik ben ooit generalistisch begonnen door mijn brede interesse. En ook op het gebied van IT merk
-                        ik deze eigenschap weer terug. Vooral dat de IT oneindig complex kan zijn zorgt voor een
+                        ik deze eigenschap terug. Vooral dat de IT oneindig complex kan zijn zorgt voor een
                         continue uitdaging en vervult mijn leergierigheid. Zeker met de AI ontwikkelingen gaat er veel
                         veranderen, en ik blijf graag - in hoeverre dat mogelijk is in de IT - <i>ahead of the curve</i>.
                     </p>
