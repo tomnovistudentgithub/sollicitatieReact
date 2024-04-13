@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Welkomstbericht from "./pages/Welkomstbericht";
 import NavBar from "./component/NavBar";
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import loadState from "./helpers/loadState";
 import saveState from "./helpers/saveState";
 import Werkervaring from "./pages/Werkervaring";
