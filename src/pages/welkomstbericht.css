@@ -40,8 +40,9 @@
     color: #f9f9f9;
     width: 200px;
     height: 50px;
-    font-size: 1.8em;
+    font-size: 1.2em;
     box-shadow: rgba(36, 36, 38, 0.6) 2px 2px 2px;
+    text-align: center;
 }
 
 .btn-welkomstbericht:active {
@@ -53,7 +54,6 @@
 }
 
 .welkomstbericht-maureen {
-    background-color: ;
     background: linear-gradient(to right, rgba(19, 128, 109, 0.5), rgba(0, 0, 255, 0.2));
     font-size: 1em;
 
@@ -67,7 +67,7 @@
 
 .welkomstbericht-shirley {
     background-color: rgba(85, 145, 140, 0.73);
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .welkomstbericht-cheyenne {
