@@ -40,7 +40,7 @@
     color: #f9f9f9;
     width: 200px;
     height: 50px;
-    font-size: 1.3em;
+    font-size: 1.8em;
     box-shadow: rgba(36, 36, 38, 0.6) 2px 2px 2px;
 }
 
@@ -67,12 +67,12 @@
 
 .welkomstbericht-shirley {
     background-color: rgba(85, 145, 140, 0.73);
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 .welkomstbericht-cheyenne {
     background: linear-gradient(to right, purple, pink);
-    font-size: 0.85em;
+    font-size: 0.9em;
 }
 
 @media (max-width: 600px) {
@@ -80,7 +80,6 @@
         margin-left: 5px;
         margin-right: 5px;
         box-sizing: border-box;
-
     }
 
     .welkomstbericht-inner-container {
@@ -90,10 +89,9 @@
         flex-direction: column;
         align-items: center;
         background: rgba(36, 36, 36, 0.2);
-        height: 100%;
+        height: 110%;
         font-size: 0.8em;
         padding: 15px;
         margin-top:140px;
-
     }
 }
