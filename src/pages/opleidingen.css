@@ -43,6 +43,41 @@ font-size: 2em;
     list-style: none;
     background: rgba(36, 36, 36, 0.17);
     padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .outer-container-opleidingen {
+        height: 100%;
+    }
+
+    .inner-container-opleidingen h1 {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .inner-container-opleidingen p {
+        font-size: 0.6em;
+        margin-top: 20px;
+    }
 
 
+    .opleidingen-content-container-columns {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .opleidingen-content-container-columns ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .opleidingen-content-container-columns ul li:first-child {
+        margin-right: 10px;
+
+    }
 }
