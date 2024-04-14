@@ -38,7 +38,7 @@ function Homepage({name, setName}) {
 
                 <div className="homepage-content-container">
                     <p> Leuk dat je hier bent. Dit is mijn React projectje t.b.v. de sollicitatie voor <i>Full Stack
-                        Ontwikkelaar</i> bij team Student Connect. </p>
+                        Ontwikkelaar/Mendix Ontwikkelaar</i> bij team Student Connect. </p>
                 </div>
 
                 {name ? (
