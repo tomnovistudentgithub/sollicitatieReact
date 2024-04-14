@@ -37,7 +37,7 @@ function Homepage({name, setName}) {
                 <h1>Welkom{name ? ` ${displayName}  ` : ''} op mijn sollicitatiepagina! </h1>
 
                 <div className="homepage-content-container">
-                    <p> Leuk dat je hier bent. Dit is React projectje t.b.v. de sollicitatie voor <i>Full Stack
+                    <p> Leuk dat je hier bent. Dit is mijn React projectje t.b.v. de sollicitatie voor <i>Full Stack
                         Ontwikkelaar</i> bij team Student Connect. </p>
                 </div>
 
@@ -48,7 +48,7 @@ function Homepage({name, setName}) {
                 ) : (
                     <>
 
-                        <p> Je kunt zo mijn CV en motivatie bekijken maar ik wil je vragen om onderstaand je
+                        <p> Je kunt zometeen mijn CV en motivatie bekijken maar ik wil je vragen om onderstaand je
                             naam in te geven: </p>
 
 
