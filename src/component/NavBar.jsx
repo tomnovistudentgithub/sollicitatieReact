@@ -1,11 +1,29 @@
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBriefcase, faGraduationCap, faEnvelope, faHome, faUser} from '@fortawesome/free-solid-svg-icons';
 import './navbar.css';
 import {NavLink} from "react-router-dom";
 import WarningMessage from "./WarningMessage.jsx";
+import { useNavigate } from 'react-router-dom';
+import {useContext, useEffect, useState} from "react";
+import WarningContext from "../context/WarningContext.js";
+
 
 function NavBar() {
+  const location = useLocation();
+  const { showWarning, setShowWarning } = useContext(WarningContext);
+
+  useEffect(() => {
+    const handlePopState = () => {
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [location]);
+
   return (
       <div className="navbar-outer-container" id="navbarId">
         <nav className="navbar-inner-container">
@@ -32,7 +50,7 @@ function NavBar() {
             </li>
           </ul>
         </nav>
-        <WarningMessage />
+        {showWarning && <WarningMessage closeWarning={() => setShowWarning(false)} />}
       </div>
 
   );

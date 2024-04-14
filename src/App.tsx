@@ -10,16 +10,19 @@ import Footer from "./component/Footer";
 import About from "./pages/About";
 import Opleiding from "./pages/Opleiding";
 import Motivatie from "./pages/Motivatie";
-
+import WarningContext from "./context/WarningContext";
 function App() {
     const [name, setName] = useState(loadState('name', ''));
-
+    const [showWarning, setShowWarning] = useState(true);
     useEffect(() => {
         saveState('name', name);
     }, [name]);
 
     return (
+
         <Router>
+            <WarningContext.Provider value={{ showWarning, setShowWarning }}>
+                <>
             <NavBar />
             <Routes>
                 <Route path="/" element={<Homepage name={name} setName={setName} />} />
@@ -28,13 +31,13 @@ function App() {
                 <Route path="/opleidingen" element={<Opleiding />} />
                 <Route path="/motivatie" element={<Motivatie />} />
                 <Route path="/about" element={<About />} />
-
-
-
-
                 <Route path={"*"} element={<h1>Sorry deze pagina bestaat niet</h1>} />
+
+
             </Routes>
             <Footer />
+</>
+            </WarningContext.Provider>
         </Router>
     );
 }

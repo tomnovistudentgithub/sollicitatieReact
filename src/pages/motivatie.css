@@ -217,6 +217,33 @@
         margin: 5px 0;
     }
 
+    .modal {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 400px;
+    }
+    .modal-content {
+        flex-basis: 400px;
+        width: 400px;
+        text-align: center;
+
+
+    }
+
+    .modal button {
+        background: deeppink;
+        color: white;
+
+    }
+
+    .modal button:hover {
+        background: darkred;
+    }
+
 
 
 }

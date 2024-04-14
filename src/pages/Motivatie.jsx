@@ -1,13 +1,26 @@
-import React, {useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import './motivatie.css';
 import inviteGif from '../assets/i74.gif';
 import rejectGif from '../assets/angrycat.gif';
+import WarningContext from "../context/WarningContext.js";
 
 function Motivatie() {
         const [showModal, setShowModal] = useState(false);
         const [modalContent, setModalContent] = useState('');
+        const { showWarning, setShowWarning } = useContext(WarningContext);
+
+
     const [rejectButtonText, setRejectButtonText] = useState('Kandidaat afwijzen');
     const [inviteButtonText, setInviteButtonText] = useState('Uitnodigen op gesprek');
+
+    useEffect(() => {
+        if (showModal) {
+            setShowWarning(false);
+        } else {
+            setShowWarning(true);
+        }
+    }, [showModal]);
+
     const handleInviteClick = () => {
         setModalContent(<><p>Beste collega, top dat je me op gesprek wilt laten komen. <br></br>Bespreek het nog even ondeling met jullie team, maar ik kom graag op gesprek! <br></br> Groet, Tom </p><img src={inviteGif} alt="Invite GIF" /></>); // Add the img tag here
         setShowModal(true);
@@ -46,20 +59,18 @@ function Motivatie() {
 
                 <div className="motivatie-content-container">
                     <p>Laat me even vooropstellen, ik probeer me hier niet te meten aan Steve Jobs. Voor mij betekent
-                        'great work' niet zozeer het bereiken van top prestaties maar vooral het opgaan in iets wat
-                        intrinsiek bij je past. Met mijn 40 uur werk per week kan ik me helemaal vinden in die
+                        'great work' niet zozeer het bereiken van de allerbeste prestaties of de top van de piramide nastreven maar het opgaan in iets wat
+                        intrinsiek bij je past. Daar ben ik wel heel ambitieus in. Met mijn 40 uur werk per week kan ik me helemaal vinden in die
                         quote. </p>
 
                     <p>Ik ben ooit generalistisch begonnen door mijn brede interesse. En ook op het gebied van IT merk
                         ik deze eigenschap terug. Vooral dat de IT oneindig complex kan zijn zorgt voor een
                         continue uitdaging en vervult mijn leergierigheid. Zeker met de AI ontwikkelingen gaat er veel
-                        veranderen, en ik blijf graag - in hoeverre dat mogelijk is in de IT - <i>ahead of the curve</i>.
+                        veranderen, en ik blijf graag - in hoeverre dat mogelijk is in de wereld van IT - <i>ahead of the curve</i>.
                     </p>
 
-                    <p>Vanaf het begin bij functioneel beheer heeft de technische hoek mij getrokken. Bij mijn
-                        sollicitatiegesprek bij functioneel beheer gaf ik al eens aan dat coderen mij erg
-                        aantrok. En jaren later stroomt het bloed nog steeds waar het niet gaan kan. Of ja: uiteindelijk
-                        stroomt het toch die kant op.</p>
+                    <p>Bij mijn sollicitatiegesprek bij functioneel beheer gaf ik al eens aan dat coderen mij erg
+                        aantrok. En jaren later kruipt het bloed steeds waar het niet gaan kan.  </p>
 
                     <p>Ik heb bij IM de kans gekregen om een opleiding te starten tot full stack developer en mijn
                         werkplezier is enorm toegenomen sinds ik dit steeds meer in mijn werk toepas. Samen met Caroline
@@ -67,15 +78,18 @@ function Motivatie() {
                         frontend project werken voor de studie. En natuurlijk met collegas om tafel zitten om ideeën uit
                         te werken. </p>
 
+                    <p>En dan volgt dan ook een moeilijke keuze, ben ik bereid een top team te verlaten om sneller die stap te kunnen maken. De invulling van dat antwoord is me nu duidelijk. Wat hierbij enorm helpt is dat ik onderdeel zou blijven van IM. Ik ga mijn best doen om  jullie te overtuigen mij die kans te bieden. </p>
+
                     <p>Ik ben de IT dus alles behalve beu, maar wil er wel een nieuwe invulling aan geven. Ik zie in de
                         toekomst een rol voor me als DevOps. Een technish expert die ook direct met een gebruiker en
                         collega kan schakelen over nieuwe functionaliteit. Die samenwerkt aan het verbeteren van de
                         producten. Ik ben dus geen eenpitter.</p>
 
-                    <p>Qua specifieke ervaring zal ik het afleggen tegen een ervaren mendix consultant. Maar het
+                    <p>Qua specifieke Mendix ervaring zal ik het afleggen tegen een ervaren mendix consultant. Maar het
                         voordeel dat ik meebreng is dat ik de uni al goed ken en dat ik ondanks mijn senior ervaring in
                         de IT het enthousiasme van een beginner meebreng. Ook denk ik een waardevolle bijdrage te kunnen
                         leveren aan het opzetten van het team.</p>
+
                     <p>Laat me maar weten of je wilt dat ik op gesprek kom! </p>
                     <div className="button-container">
                         <button className="invite-button" onClick={handleInviteClick} onMouseOver={handleInviteHover}

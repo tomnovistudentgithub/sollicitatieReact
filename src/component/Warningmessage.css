@@ -15,5 +15,24 @@
 @media (max-width: 1000px) {
     .warning-message {
         display: block;
+
+    }
+
+    .warning-message-content {
+        width: 92%;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 2px;
+        right: 5px;
+        background: none;
+        border: none;
+        font-size: 12px;
+        color: white;
+        cursor: pointer;
+        box-shadow: #242424 0px 0px 2px;
+        padding: 5px 10px;
+
     }
 }
