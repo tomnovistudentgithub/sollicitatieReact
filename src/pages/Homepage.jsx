@@ -62,9 +62,7 @@ function Homepage({name, setName}) {
                                     type="text" {...register('naam', {required: true})} />
                                 <button className="btn-homepage" type="submit">Verder</button>
                                 {errors.naam && <p className="error-style">Het naamveld is verplicht</p>}
-
                             </div>
-
                         </form>
                     </>
                 )}

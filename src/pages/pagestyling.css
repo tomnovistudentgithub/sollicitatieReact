@@ -109,6 +109,18 @@
 @media (max-width: 600px) {
     .btn-homepage {
         margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    .inner-container-homepage {
+        display: flex;
+        flex-basis: 400px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(36, 36, 36, 0.2);
+        height: 80%;
+        font-size: 0.8em;
     }
 }
 
@@ -119,7 +131,6 @@
 }
 
 .btn-homepage:active {
-
     border: 25px;
     transform: scale(0.9);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -141,7 +152,7 @@
 }
 
 .form-group {
-    padding:20px;
+    /*padding:20px;*/
 }
 
 .error-style {

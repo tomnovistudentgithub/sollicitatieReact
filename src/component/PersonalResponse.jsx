@@ -23,7 +23,7 @@ function personalResponse(passedName) {
 
     let response = responses[firstName];
     if (!response) {
-        response = `Hello ${name}, jij werkt zeker niet voor team Student Connect of je hebt gewoon een nepnaampje ingegeven? Geen persoonlijk berichtje dan maar niettemin welkom! 😊`;
+        response = `Hallo ${name}, jij werkt zeker niet voor team Student Connect of je hebt gewoon een nepnaampje ingegeven? Geen persoonlijk berichtje dan maar niettemin welkom! 😊`;
     }
 
 
