@@ -106,6 +106,12 @@
     margin-left: 20px;
     transition: border-color 0.25s;
 }
+@media (max-width: 600px) {
+    .btn-homepage {
+        margin-top: 20px;
+    }
+}
+
 
 .btn-homepage:hover {
     border-color: rgba(52, 210, 16, 0.45);
