@@ -151,3 +151,72 @@
     color: white;
 
 }
+
+.modal button:hover {
+    background: darkred;
+}
+
+@media (max-width: 768px) {
+    .outer-container-motivatie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+
+    }
+
+    .inner-container-motivatie {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .quote-block.quote {
+        margin-top: 80px;
+        position: relative;
+        padding: 1em;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+
+    .quote-block.quote::before {
+        content: "“";
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        font-size: 3em;
+        color: rgba(255, 255, 255, 0.61);
+    }
+
+    .quote-block.quote::after {
+        content: "”";
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        font-size: 3em;
+        color: #ccc;
+    }
+
+    .motivatie-content-container {
+        margin-top: 10px;
+        margin-right:10px;
+    }
+
+    .inner-container-motivatie p {
+        font-size: 1em;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .invite-button, .reject-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+
+
+}

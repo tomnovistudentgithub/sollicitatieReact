@@ -1,15 +1,15 @@
 import {useNavigate} from "react-router-dom";
 import {useForm} from "react-hook-form";
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { FaCode } from 'react-icons/fa';
 import './pagestyling.css';
+import imageTom from '../assets/DSC06298.jpg';
 
 function Homepage({name, setName}) {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    console.log(data);
     setName(data.naam);
     navigate('/Welkomstbericht');
   };
@@ -19,6 +19,11 @@ function Homepage({name, setName}) {
     };
 
     const displayName = name.charAt(0).toUpperCase() + name.slice(1);
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = imageTom;
+    }, []);
 
     return (
         <div className="outer-container-homepage">
