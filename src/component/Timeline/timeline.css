@@ -71,6 +71,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    margin-bottom: 15px;
 }
 
 .timeline-event-content {
@@ -145,4 +146,59 @@
     cursor: pointer;
     box-shadow: #242424 0px 0px 5px;
 
+}
+
+@media (max-width: 1000px) {
+
+    .timeline {
+        padding: 5px;
+        height: 60vh;
+
+    }
+
+    .timeline-event-icon {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+
+    }
+
+    .timeline-event-logo {
+        position: absolute;
+        width: 130px;
+        height: 65px;
+        right:  0px;
+
+    }
+
+    .timeline-event-content {
+        width: 150px;
+        padding: 2px;
+        font-size: 0.9em;
+        border-radius: 1px;
+        margin-top: 0px;
+left: 0px;
+        margin-left: 1px;
+
+
+    }
+
+
+
+
+    .timeline-event-icon p,
+    .timeline-event-icon span {
+        font-size: 0.8em;
+
+    }
+
+    .info-and-button-timeline {
+        padding: 10px;
+    }
+
+    .info-and-button-timeline .btn-werkervaring {
+        padding: 5px;
+        font-size: 0.8em;
+    }
 }

@@ -6,12 +6,21 @@ import {faFile} from "@fortawesome/free-solid-svg-icons";
 
 function Timeline({ events }) {
     const [data, setData] = useState(events);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         setData(events);
     }, [events]);
 
-    console.log(events);
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <>
@@ -24,7 +33,7 @@ function Timeline({ events }) {
                         </div>
 
                         <div className="timeline-event-content">
-                            <p>{event.description}</p>
+                            <p>{windowWidth <= 480 ? event.shortDescription : event.description}</p>
                         </div>
                         <div className="timeline-event-logo">
                             <img src={event.logo} alt={event.company}/>
@@ -34,7 +43,7 @@ function Timeline({ events }) {
             </div>
             <div className="info-and-button-timeline">
                 <div style={{display: 'flex', alignItems: 'center'}}>
-                    <p style={{marginRight: '10px'}}>Neem eventueel ook een kijkje op mijn</p>
+                <p style={{marginRight: '10px'}}>Neem eventueel ook een kijkje op mijn</p>
                     <a href="https://www.linkedin.com/in/tomlennartz/" target="_blank"
                        rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} size="3x"/>
