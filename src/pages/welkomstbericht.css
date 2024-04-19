@@ -23,7 +23,7 @@
 .welkomstbericht-inner-container p {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-size: 2em;
+    font-size: 1.9em;
     flex-direction: column;
 }
 
@@ -49,32 +49,34 @@
    transform: scale(0.9);
 }
 
-.welkomstbericht-stefan p {
-    /*font-size: 0.9em;*/
+.welkomstbericht-stefan {
+
     background-color: rgba(16, 137, 210, 0.45);
 }
 
-.welkomstbericht-maureen p {
+.welkomstbericht-maureen {
     background: linear-gradient(to right, rgba(19, 128, 109, 0.5), rgba(0, 0, 255, 0.2));
-    /*font-size: 0.9em;*/
+
 
 }
 
-.welkomstbericht-paul p {
+.welkomstbericht-paul {
     background-color: rgba(105, 161, 160, 0.73);
-    /*font-size: 0.9em;*/
+
 
 }
 
-.welkomstbericht-shirley p {
+.welkomstbericht-shirley {
     background-color: rgba(85, 145, 140, 0.73);
-    /*font-size: 0.7em;*/
+
 }
 
-.welkomstbericht-cheyenne p {
+.welkomstbericht-cheyenne {
     background: linear-gradient(to right, purple, pink);
-    font-size: 1.8em;
+
 }
+
+
 
 @media (max-width: 600px) {
     .welkomstbericht-content {
