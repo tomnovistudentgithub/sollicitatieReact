@@ -23,7 +23,7 @@
 .welkomstbericht-inner-container p {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-size: 1.9em;
+    font-size: 1.8em;
     flex-direction: column;
 }
 
@@ -68,11 +68,12 @@
 
 .welkomstbericht-shirley {
     background-color: rgba(85, 145, 140, 0.73);
-
+    font-size: 0.9em;
 }
 
 .welkomstbericht-cheyenne {
     background: linear-gradient(to right, purple, pink);
+    font-size: 0.8em;
 
 }
 
