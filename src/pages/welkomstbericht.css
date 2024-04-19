@@ -73,7 +73,7 @@
 
 .welkomstbericht-cheyenne {
     background: linear-gradient(to right, purple, pink);
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 @media (max-width: 600px) {
