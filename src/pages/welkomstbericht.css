@@ -62,13 +62,14 @@
 
 .welkomstbericht-paul {
     background-color: rgba(105, 161, 160, 0.73);
+    font-size: 0.7em;
 
 
 }
 
 .welkomstbericht-shirley {
     background-color: rgba(85, 145, 140, 0.73);
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .welkomstbericht-cheyenne {
@@ -98,4 +99,12 @@
         padding: 15px;
         margin-top:140px;
     }
+
+    .btn-welkomstbericht {
+        font-size: 1.8em;
+
+    }
+
+
 }
+

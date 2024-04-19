@@ -207,8 +207,6 @@
     gap:20px;
     background: rgba(147, 147, 147, 0.29);
     margin-left: 50px;
-
-
 }
 
 
@@ -257,5 +255,12 @@
         font-size: 1em;
         flex-basis: 100%;
     }
+}
+
+@media (max-width: 600px) {
+    .inner-container-homepage p {
+        font-size: 1.1em;
+    }
+
 }
 
